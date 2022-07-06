@@ -7,21 +7,14 @@ body {
     background: url("../../assets/images/background-color.jpg");
 }
 
-
 @font-face {
-    font-family: "IBMPlexSansArabic";
-    src: url(../fonts/IBMPlexSansArabic-Light.ttf);
-}
-
-
-@font-face {
-    font-family: "GESSTwoLight";
-    src: url(../fonts/GESSTwoLight.otf);
+    font-family: "Bahij";
+    src: url(../fonts/Bahij.ttf);
 }
 
 
 #myCanvas{
-    font-family: "GESSTwoLight";
+    font-family: "Bahij";
     max-height: 800px;
 }
 
@@ -38,5 +31,5 @@ canvas {
 }
 
 body{
-    font-family: "GESSTwoLight";
+    font-family: "Bahij";
 }

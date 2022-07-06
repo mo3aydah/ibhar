@@ -17,13 +17,13 @@ function DownloadCanvasAsImage(){
     downloadLink.setAttribute('download', imageName);
     let canvas = document.getElementById('myCanvas');
     canvas.toBlob(function(blob) {
-      let url = URL.createObjectURL(blob);
-      downloadLink.setAttribute('href', url);
-      downloadLink.click();
+    let url = URL.createObjectURL(blob);
+    downloadLink.setAttribute('href', url);
+    downloadLink.click();
     });
 }
 
-imageObj.src = "assets/images/oldcover.jpg"; 
+imageObj.src = "assets/images/index.jpg"; 
 
 var downloadCardButton = document.getElementById('downloadCard');
 downloadCardButton.addEventListener('click', function(e){
@@ -35,14 +35,14 @@ downloadCardButton.addEventListener('click', function(e){
 
     // custom font
     context.textAlign = 'center';
-    context.font = "50pt IBMPlexSansArabic";
+    context.font = "40pt Bahij";
 
     // text color
-    context.fillStyle = '#262967';
+    context.fillStyle = '#535BAE';
 
     // center and make text
-    textWidth = (imageWidth - imageWidth / 2)
-    textHeight = (imageHeight - 400)
+    textWidth = (imageWidth - imageWidth / 1.95)
+    textHeight = (imageHeight - 640)
     
     context.fillText(text, textWidth, textHeight);
 
