@@ -27,7 +27,6 @@ body {
 
 #myCanvas{
     font-family: "GESSTwoMedium";
-    font-weight: bold;
     max-height: 800px;
 }
 
@@ -45,5 +44,4 @@ canvas {
 
 body{
     font-family: "GESSTwoMedium";
-    font-weight: bold;
 }
