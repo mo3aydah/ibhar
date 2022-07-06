@@ -27,7 +27,7 @@ imageObj.src = "assets/images/index.jpg";
 
 var downloadCardButton = document.getElementById('downloadCard');
 downloadCardButton.addEventListener('click', function(e){
-    // clear canvas from text and draw image
+    // clear canvas from text and draw image Regards,
     context.clearRect(0, 0, imageWidth, imageHeight);
     context.drawImage(imageObj, 0, 0);
 
