@@ -19,11 +19,11 @@ function DownloadCanvasAsImage(){
     canvas.toBlob(function(blob) {
     let url = URL.createObjectURL(blob);
     downloadLink.setAttribute('href', url);
-    downloadLink.click();
+    //downloadLink.click();
     });
 }
 
-imageObj.src = "assets/images/index.jpg"; 
+imageObj.src = "assets/images/index.png"; 
 
 var downloadCardButton = document.getElementById('downloadCard');
 downloadCardButton.addEventListener('click', function(e){
@@ -35,14 +35,14 @@ downloadCardButton.addEventListener('click', function(e){
 
     // custom font
     context.textAlign = 'center';
-    context.font = "40pt Bahij";
+    context.font = "40pt GESSTwoMedium";
 
     // text color
-    context.fillStyle = '#535BAE';
+    context.fillStyle = '#000000';
 
     // center and make text
-    textWidth = (imageWidth - imageWidth / 1.95)
-    textHeight = (imageHeight - 640)
+    textWidth = (imageWidth - imageWidth / 1.90)
+    textHeight = (imageHeight - 380)
     
     context.fillText(text, textWidth, textHeight);
 
